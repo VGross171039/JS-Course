@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/add.css">
+  <link rel="stylesheet" href="css/local.css">
+  <title>JS Course | Переменные</title>
+</head>
+
+<body>
+  <div class="page-wrap">
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <a href="../../index.html"><span class="h1">JS Course</span></a>
+          </div>
+          <div class="col-6">
+            <ul class="link-wrap">
+              <li><a href="./task.html" target="_blank">Задачи</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="content-wrap">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="title-page">
+              <h2>Переменные</h2>
+              <ul class="lessonpage">
+                <li><a href="https://learn.javascript.ru/variables" target="_blank">Страница урока</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="workarea">
+              <h3>1. Общее описание</h3>
+              <p>Переменная - это «именованное хранилище» для данных</p>
+              <p>Для создания переменной в JavaScript используется ключевое слово let</p>
+              <p>Переменная может быть объявлена только один раз. Повторное объявление вызывает ошибку</p>
+              <p>Возможно изменение значения переменной</p>
+              <p>Возможно объявить две переменные и скопировать данные из одной в другую</p>
+              <p>Функциональные языки программирования Scala или Erlang запрещают изменять значение
+              переменной</p>
+              <p>Данные языки рекомендуются для ознакомления</p>
+              <div class="linkwrap mt-1">
+                <a href="https://www.scala-lang.org/" target="_blank">
+                  <h3>Scala<span>The Scala Programming Language</span></h3>
+                </a>
+                <a href="https://www.erlang.org/" target="_blank">
+                  <h3>Erlang<span>Practical functional programming for a parallel world</span></h3>
+                </a>
+              </div>
+            </div>
+            <div class="workarea">
+              <h3>1. Имена переменных</h3>
+              <p>Имя переменной должно содержать только буквы, цифры или символы $ и _</p>
+              <p>Первый символ не должен быть цифрой</p>
+              <p>Если имя содержит несколько слов, обычно используется верблюжья нотация (CamelCase)</p>
+              <p>Знак доллара '$' и подчёркивание '_' также можно использовать в названиях</p>
+              <p>Регистр написания имеет значение</p>
+              <p>Нелатинские буквы разрешены, но не рекомендуются</p>
+              <p>Использование зарезервированных имен вызывает ошибку</p>
+            </div>
+            <div class="workarea">
+              <h3>2. Константы</h3>
+              <p>Переменные, объявленные с помощью const, называются «константами»</p>
+              <p>Константу нельзя изменить. Попытка сделать это приведёт к ошибке</p>
+              <h3 class="mt-1">Константы в верхнем регистре</h3>
+              <p>Рекомендуется использование констант в качестве псевдонимов для трудно запоминаемых значений, которые известны до начала исполнения скрипта</p>
+              <p>Названия таких констант пишутся с использованием заглавных букв и подчёркивания</p>
+              <h3 class="mt-1">Правила применения заглавных и обычных букв в константах</h3>
+              <p>Константы, известные до выполнения скрипта - обозначаются заглавными буквами</p>
+              <p>Константы, вычисляемые во время выполнения сценария, но не изменяющиеся после их первоначального назначения - обозначаются обычными буквами</p>
+              <h3 class="mt-1">Придумывайте правильные имена</h3>
+              <p>Используйте легко читаемые имена, такие как userName или shoppingCart</p>
+              <p>Избегайте использования аббревиатур или коротких имён</p>
+              <p>Делайте имена максимально описательными и лаконичными</p>
+              <p>Договоритесь с вашей командой об используемых терминах</p>
+            </div>
+            <div class="workarea">
+              <h3>Итого</h3>
+              <p>Мы можем объявить переменные для хранения данных с помощью ключевых слов var, let или const</p>
+              <p>let - это современный способ объявления</p>
+              <p>var - это устаревший способ объявления</p>
+              <p>const - похоже на let, но значение переменной не может изменяться</p>
+              <p>Переменные и константы должны быть названы таким образом, чтобы было легко понять, что у них внутри</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="col-12">
+          <a href="https://learn.javascript.ru/" class="h3" target="_blank">JS Course Learn</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

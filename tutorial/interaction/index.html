@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/add.css">
+  <link rel="stylesheet" href="css/local.css">
+  <title>JS Course | Взаимодействие</title>
+</head>
+
+<body>
+  <div class="page-wrap">
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <a href="../../index.html"><span class="h1">JS Course</span></a>
+          </div>
+          <div class="col-6">
+            <ul class="link-wrap">
+              <li><a href="./task.html" target="_blank">Задачи</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="content-wrap">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="title-page">
+              <h2>Взаимодействие: alert, prompt, confirm</h2>
+              <ul class="lessonpage">
+                <li><a href="https://learn.javascript.ru/alert-prompt-confirm" target="_blank">Страница урока</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="workarea">
+              <h3>1. Функции интерфейса браузера</h3>
+              <p>Ззнакомимся с функциями интерфейса браузера, а именно: alert, prompt и confirm</p>
+              <h3 class="mt-1">Alert</h3>
+              <p>Показывает сообщение в модальном окне и ждёт, пока пользователь нажмёт кнопку «ОК»</p>
+              <p>Понятие модальное означает, что пользователь не может взаимодействовать с интерфейсом остальной части страницы, нажимать
+              на другие кнопки и т.д. до тех пор, пока взаимодействует с окном</p>
+              <h3 class="mt-1">Prompt</h3>
+              <p>Функция prompt принимает два аргумента: title и default</p>
+              <p>title - отобразит заголовок в модальном окне</p>
+              <p>default - отобразит текст в модальном окне (необязательный аргумент)</p>
+              <p>Квадратные скобки вокруг default в описанном выше синтаксисе означают, что параметр факультативный, необязательный</p>
+              <p>Чтобы prompt хорошо выглядел в IE, рекомендуется всегда указывать второй параметр, наприме ''</p>
+              <h3 class="mt-1">Confirm</h3>
+              <p>Функция confirm отображает модальное окно с текстом вопроса question и двумя кнопками: OK и Отмена</p>
+              <p>Результат – true, если нажата кнопка OK. В других случаях – false</p>
+              <p></p>
+            </div>
+            <div class="workarea">
+              <h3>Итого</h3>
+              <p>Мы рассмотрели 3 функции браузера для взаимодействия с пользователем</p>
+              <p>alert - показывает сообщение</p>
+              <p>prompt - показывает сообщение и запрашивает ввод текста от пользователя. Возвращает напечатанный в поле ввода текст или null,
+              если была нажата кнопка «Отмена» или Esc с клавиатуры.</p>
+              <p>confirm - показывает сообщение и ждёт, пока пользователь нажмёт OK или Отмена. Возвращает true, если нажата OK, и false, если
+              нажата кнопка «Отмена» или Esc с клавиатуры</p>
+              <p>Все эти методы являются модальными: останавливают выполнение скриптов</p>
+              <p>Расположение окон определяется браузером. Обычно окна находятся в центре</p>
+              <p>Визуальное отображение окон зависит от браузера, и мы не можем изменить их вид</p>
+              <p>Методы применяются, если в более сложных конструкциях (оформлении) нет необходимости</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="col-12">
+          <a href="https://learn.javascript.ru/" class="h3" target="_blank">JS Course Learn</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

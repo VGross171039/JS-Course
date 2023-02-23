@@ -1,0 +1,91 @@
+.main-menu{
+  padding-top: 0;
+}
+
+.main-menu span {
+  margin-top: 1.5rem;
+}
+
+.titlesector{
+  padding-bottom: 2rem;
+}
+
+.titlesector h2{
+  font-size: 20px;
+  color: aquamarine;
+  padding-bottom: 0;
+}
+
+.header h3{
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: .5rem;
+}
+
+.workarea + .workarea{
+  margin-top: 1.5rem;
+}
+
+.workarea:first-child{
+  padding-top: 1rem;
+}
+
+.workarea:last-child{
+  padding-bottom: 2rem;
+}
+
+h3{
+  font-size: 20px;
+  padding-bottom: 0;
+  margin-bottom: 1rem;
+}
+
+h3 span{
+  display: block;
+  color: #ccc;
+  font-size: 16px;
+  margin-top: .5rem;
+}
+
+h4{
+  color: #fff;
+  margin-bottom: .5rem;
+  font-weight: 400;
+}
+
+p{
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+p + p{
+  margin-top: .5rem;
+}
+
+.mt-1{
+  margin-top: 1rem;
+}
+
+.mb-1{
+  margin-bottom: 1rem;
+}
+
+.my-1{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.addinfo a{
+  color: #fff;
+  transition: all .3s ease;
+}
+
+.addinfo a:hover {
+  color: #ccc;
+}
+
+.title-p{
+  font-size: 18px;
+  color: #fff;
+}

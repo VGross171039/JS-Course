@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/add.css">
+  <link rel="stylesheet" href="./css/local.css">
+  <title>Tasks</title>
+</head>
+<body>
+
+  <div class="page-wrap">
+    <div class="content-wrap">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="workarea">
+              <h2>Задачи по разделу</h2>
+              <a href="https://learn.javascript.ru/logical-operators#tasks" target="_blank">Link</a>
+            </div>
+            <div class="workarea">
+              <h3>Что выведет console.log (ИЛИ)?</h3>
+              <p>console.log( null || 2 || undefined );</p>
+              <h4>My result:</h4>
+              <p>2</p>
+              <h4>Result true:</h4>
+              <p>Ответ: 2, это первое значение, которое в логическом контексте даст true</p>
+            </div>
+            <div class="workarea">
+              <h3>Что выведет console.log (ИЛИ)?</h3>
+              <p>console.log( alert(1) || 2 || alert(3) );</p>
+              <h4>My result:</h4>
+              <p></p>
+              <h4>Result true:</h4>
+              <p>Вызов alert не возвращает значения, (возвращает undefined)</p>
+              <p>1. Первый оператор ИЛИ || выполнит первый alert(1)</p>
+              <p>2. Получит undefined и пойдёт дальше, ко второму операнду в поисках истинного значения</p>
+              <p>3. Так как второй операнд 2 является истинным, то вычисления завершатся, результатом undefined || 2 будет 2, которое будет выведено внешним console.log( .... )</p>
+              <p>Второй оператор || не будет выполнен, выполнение до alert(3) не дойдёт, поэтому 3 выведено не будет</p>
+            </div>
+            <div class="workarea">
+              <h3>Что выведет console.log (И)?</h3>
+              <p>console.log( 1 && null && 2 );</p>
+              <h4>My result:</h4>
+              <p>null</p>
+              <h4>Result true:</h4>
+              <p>Ответ: null, потому что это первое «ложное» значение из списка</p>
+            </div>
+            <div class="workarea">
+              <h3>Что выведет alert (И)?</h3>
+              <p>alert( alert(1) && alert(2) );</p>
+              <h4>My result:</h4>
+              <p></p>
+              <h4>Result true:</h4>
+              <p>Ответ: 1, а затем undefined</p>
+              <p>Вызов alert не возвращает значения, или, иначе говоря, возвращает undefined</p>
+              <p>Поэтому до правого alert дело не дойдёт, вычисления закончатся на левом</p>
+            </div>
+            <div class="workarea">
+              <h3>Что выведет этот код?</h3>
+              <p>console.log( null || 2 && 3 || 4 );</p>
+              <h4>My result:</h4>
+              <p>3</p>
+              <h4>Result true:</h4>
+              <p>Приоритет оператора && выше, чем ||, поэтому он выполнится первым</p>
+              <p>Результат 2 && 3 = 3</p>
+              <p>Выражение приобретает вид: null || 3 || 4</p>
+              <p>Результатом является первое истинное значение: 3</p>
+            </div>
+            <div class="workarea">
+              <h3>Проверка значения из диапазона</h3>
+              <p>Напишите условие if для проверки, что переменная age находится в диапазоне между 14 и 90 включительно</p>
+              <h4>My result:</h4>
+              <p>if(age >= 14 && age <= 90)</p>
+              <h4>Result true:</h4>
+              <p>if(age >= 14 && age <= 90)</p>
+            </div>
+            <div class="workarea">
+              <h3>Проверка значения вне диапазона</h3>
+              <p>Напишите условие if для проверки, что значение переменной age НЕ находится в диапазоне 14 и 90 включительно</p>
+              <p>Напишите два варианта: первый с использованием оператора НЕ !, второй - без этого оператора</p>
+              <h4>My result:</h4>
+              <p>if (!(age >= 14 && age <= 90))</p>
+              <p>if(age < 14 || age> 90)</p>
+              <h4>Result true:</h4>
+              <p>if (!(age >= 14 && age <= 90))</p>
+              <p>if(age < 14 || age> 90)</p>
+            </div>
+            <div class="workarea">
+              <h3>Вопрос об "if"</h3>
+              <p>Какие из перечисленных ниже alert выполнятся?</p>
+              <p>Какие конкретно значения будут результатами выражений в условиях if(...)?</p>
+              <p>if (-1 || 0) alert( 'first' );</p>
+              <p>if (-1 && 0) alert( 'second' );</p>
+              <p>if (null || -1 && 1) alert( 'third' );</p>
+              <h4>My result:</h4>
+              <p>Ответ: первое и третье выполнятся</p>
+              <p>См. код</p>
+              <h4>Result true:</h4>
+              <p>Ответ: первое и третье выполнятся</p>
+              <p>См. код</p>
+            </div>
+            <div class="workarea">
+              <h3>Проверка логина</h3>
+              <p>Напишите код, который будет спрашивать логин с помощью prompt</p>
+              <p>Если посетитель вводит «Админ», то prompt запрашивает пароль</p>
+              <p>Если ничего не введено или нажата клавиша Esc - показать «Отменено»</p>
+              <p>В противном случае отобразить «Я вас не знаю»</p>
+              <h4 class="mt-1">Порядок проверки пароля</h4>
+              <p>Если введён пароль «Я главный», то выводить «Hello, Admin!»</p>
+              <p>Иначе - «Неверный пароль»</p>
+              <p>При отмене - «Отменено»</p>
+              <p>См. код</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="./js/task.js"></script>
+</body>
+</html>

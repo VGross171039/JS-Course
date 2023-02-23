@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/add.css">
+  <link rel="stylesheet" href="css/local.css">
+  <title>JS Course | Преобразование типов</title>
+</head>
+
+<body>
+  <div class="page-wrap">
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <a href="../../index.html"><span class="h1">JS Course</span></a>
+          </div>
+          <div class="col-6">
+            <ul class="link-wrap">
+              <li><a href="./task.html" target="_blank">Задачи</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="content-wrap">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="title-page">
+              <h2>Преобразование типов</h2>
+              <ul class="lessonpage">
+                <li><a href="https://learn.javascript.ru/type-conversions" target="_blank">Страница урока</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="workarea">
+              <h3>Общее описание</h3>
+              <p>В этом разделе не рассматриваются объекты</p>
+              <p>Чаще всего операторы и функции автоматически приводят переданные им значения к нужному типу</p>
+              <p>Есть также случаи, когда нам нужно явно преобразовать значение в ожидаемый тип</p>
+              <p>Явное преобразование применяется для получения числа из строкового контекста, например из текстовых
+              полей форм</p>
+            </div>
+            <div class="workarea">
+              <h3>1. Строковое преобразование</h3>
+              <p>Строковое преобразование происходит, когда требуется представление чего-либо в виде строки</p>
+              <p>Преобразование происходит очевидным образом. false становится "false", null становится "null"</p>
+            </div>
+            <div class="workarea">
+              <h3>2. Численное преобразование</h3>
+              <p>Численное преобразование происходит в математических функциях и выражениях</p>
+              <p>Мы можем использовать функцию Number(value), чтобы явно преобразовать value к числу</p>
+              <p>Если строка не может быть явно приведена к числу, то результатом преобразования будет NaN</p>
+              <h3 class="mt-1">Правила численного преобразования</h3>
+              <p>undefined - преобразуется в NaN</p>
+              <p>null - преобразуется в 0</p>
+              <p>true / false - преобразуется в 1 / 0</p>
+              <h3 class="mt-1">string</h3>
+              <p>Пробельные символы (пробелы, знаки табуляции \t, знаки новой строки \n и т. п.) по краям обрезаются<br>Далее, если остаётся пустая строка, то получаем 0, иначе из непустой строки «считывается» число <br>При ошибке результат NaN</p>
+            </div>
+            <div class="workarea">
+              <h3>3. Логическое преобразование</h3>
+              <p>Логическое преобразование происходит в логических операциях, а также выполненяется явно с помощью функции Boolean(value)</p>
+              <h3 class="mt-1">Правило преобразования</h3>
+              <p>Значения, которые интуитивно «пустые», вроде 0, пустой строки, null, undefined и NaN, становятся false</p>
+              <p>Все остальные значения становятся true</p>
+            </div>
+            <div class="workarea">
+              <h3>Итого</h3>
+              <p>Существует 3 наиболее широко используемых преобразования: строковое, численное и логическое</p>
+              <p>Строковое – Происходит, когда нам нужно что-то вывести. Может быть вызвано с помощью String(value)</p>
+              <p>Численное – Происходит в математических операциях. Может быть вызвано с помощью Number(value)</p>
+              <p>Логическое – Происходит в логических операциях. Может быть вызвано с помощью Boolean(value)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="col-12">
+          <a href="https://learn.javascript.ru/" class="h3" target="_blank">JS Course Learn</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

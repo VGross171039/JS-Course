@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/add.css">
+  <link rel="stylesheet" href="css/local.css">
+  <title>JS Course | Условное ветвление if-else</title>
+</head>
+
+<body>
+  <div class="page-wrap">
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <a href="../../index.html"><span class="h1">JS Course</span></a>
+          </div>
+          <div class="col-6">
+            <ul class="link-wrap">
+              <li><a href="./task.html" target="_blank">Задачи</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="content-wrap">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="title-page">
+              <h2>Условное ветвление if-else</h2>
+              <ul class="lessonpage">
+                <li><a href="https://learn.javascript.ru/ifelse" target="_blank">Страница урока</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="workarea">
+              <h3>Условное ветвление: if, '?'</h3>
+              <p>Для выполнения различных действий в зависимости от условий, мы можем использовать инструкцию if и условный оператор ?, который также называют оператором «вопросительный знак»</p>
+            </div>
+            <div class="workarea">
+              <h3>1. Инструкция «if»</h3>
+              <p>Инструкция if(...){code} вычисляет условие в скобках и, если результат true, то выполняет блок кода</p>
+              <p>Рекомендуется использовать фигурные скобки всегда, когда используется инструкция if, даже если выполняется только одна команда</p>
+            </div>
+            <div class="workarea">
+              <h3>2. Преобразование к логическому типу</h3>
+              <p>Число 0, пустая строка "", null, undefined и NaN в круглых скобках - становятся false</p>
+              <p>Код при таком условии никогда не выполнится</p>
+              <p>Остальные значения становятся true</p>
+              <p>Код при таком условии выполняется всегда</p>
+            </div>
+            <div class="workarea">
+              <h3>3. Блок «else»</h3>
+              <p>Инструкция if может содержать необязательный блок «else» («иначе»). Он выполняется, когда условие ложно</p>
+              <p>Пример См. код</p>
+            </div>
+            <div class="workarea">
+              <h3>4. Несколько условий: «else if»</h3>
+              <p>При необходимости проверить несколько вариантов условий используется блок else if</p>
+              <p>Присутствие блока else не является обязательным</p>
+              <p>Пример См. код</p>
+            </div>
+            <div class="workarea">
+              <h3>5. Условный оператор „?“ (тернарный)</h3>
+              <p>Определить переменную в зависимости от условия</p>
+              <p>Примеры в коде</p>
+              <h3 class="mt-1">Схема if-else с применением ?</h3>
+              <p>let result = (условие) ? значение-1 : значение-2;</p>
+              <p>Сначала вычисляется условие</p>
+              <p>Если оно истинно, тогда возвращается значение-1</p>
+              <p>Иначе - возвращается значение-2</p>
+              <h3 class="mt-1">Проверка нескольких условий</h3>
+              <p>Пример см. в коде</p>
+            </div>
+            <div class="workarea">
+              <h3>6. Нетрадиционное использование „?“</h3>
+              <p>Иногда оператор «вопросительный знак» ? используется в качестве замены if</p>
+              <p>Пример см. в коде</p>
+              <p>Не рекомендуется использовать оператор вопросительного знака таким образом</p>
+              <p>Причина: При чтении глаза сканируют код по вертикали. Блоки кода, занимающие несколько строк, воспринимаются гораздо легче, чем длинный горизонтальный набор инструкций</p>
+            </div>
+            <div class="workarea">
+              <h3>Задачи</h3>
+              <p></p>
+              <p></p>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="col-12">
+          <a href="https://learn.javascript.ru/" class="h3" target="_blank">JS Course Learn</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

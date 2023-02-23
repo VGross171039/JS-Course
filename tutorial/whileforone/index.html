@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/add.css">
+  <link rel="stylesheet" href="css/local.css">
+  <title>JS Course | Циклы while и for</title>
+</head>
+
+<body>
+  <div class="page-wrap">
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <a href="../../index.html"><span class="h1">JS Course</span></a>
+          </div>
+          <div class="col-6">
+            <ul class="link-wrap">
+              <li><a href="./task.html" target="_blank">Задачи</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="content-wrap">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="title-page">
+              <h2>Циклы while и for, часть 1</h2>
+              <ul class="lessonpage">
+                <li><a href="https://learn.javascript.ru/while-for" target="_blank">Страница урока</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="workarea">
+              <h3>Рассматриваются базовые циклы: while, do..while и for()</h3>
+              <p>Для многократного повторения одного участка кода предусмотрены циклы</p>
+            </div>
+            <div class="workarea">
+              <h3>1. Цикл «while»</h3>
+              <p>Общий синтаксис: while (condition) { code }</p>
+              <p>Код из тела цикла выполняется, пока условие condition истинно</p>
+              <p>Одно выполнение тела цикла называется итерация</p>
+              <p>Любое выражение или переменная может быть условием цикла</p>
+              <p>См. код</p>
+              <h4 class="mt-1">Фигурные скобки не требуются для тела цикла из одной строки</h4>
+              <p>while (i) alert (i--)</p>
+            </div>
+            <div class="workarea">
+              <h3>2. Цикл «do … while»</h3>
+              <p>Проверку условия можно разместить под телом цикла, используя специальный синтаксис do..while</p>
+              <p>Цикл сначала выполнит тело, а затем проверит условие condition, и будет выполняться пока его значение равно true</p>
+              <p>Такая форма синтаксиса оправдана, если нужно чтобы тело цикла выполнилось хотя бы один раз, даже если условие окажется ложным</p>
+              <p>См. код</p>
+            </div>
+            <div class="workarea">
+              <h3>3. Цикл «for»</h3>
+              <p>Более сложный, но при этом самый распространённый цикл</p>
+              <h4 class="mt-1">Составные части</h4>
+              <p>Начало let i = 0 Выполняется один раз при входе в цикл</p>
+              <p>Условие i < 3 Проверяется перед каждой итерацией цикла. Если оно вычислится в false, цикл остановится</p>
+              <p>Тело alert(i) Выполняется снова и снова, пока условие вычисляется в true</p>
+              <p>Шаг i++ Выполняется после тела цикла на каждой итерации перед проверкой условия.</p>
+              <h4 class="mt-1">Порядок выполнения</h4>
+              <p>Выполнить начало</p>
+              <p>→ (Если условие == true → Выполнить тело, Выполнить шаг)</p>
+              <p>→ (Если условие == true → Выполнить тело, Выполнить шаг)</p>
+              <p>→ (Если условие == true → Выполнить тело, Выполнить шаг)</p>
+              <p>→ (Если условие == false → Завершить цикл)</p>
+              <h4 class="my-1">Начало выполняется один раз <br>Каждая итерация заключается в проверке условия, после которой выполняется тело и шаг</h4>
+              <p>Обьявление переменной внутри счетчика называется «встроенным» объявлением переменной</p>
+              <p>Такие переменные существуют (видны) только внутри цикла</p>
+            </div>
+            <div class="workarea">
+              <h3>4. Пропуск частей «for»</h3>
+              <p>Любая часть for может быть пропущена</p>
+              <p>См. код</p>
+            </div>
+            <div class="workarea partnext">
+              <a href="../whilefortwo/index.html"><h4>Циклы while и for, часть 2</h4></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="col-12">
+          <a href="https://learn.javascript.ru/" class="h3" target="_blank">JS Course Learn</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

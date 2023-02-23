@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="stylesheet" href="../../assets/css/add.css">
+  <link rel="stylesheet" href="css/local.css">
+  <title>JS Course | Оператор нулевого слияния</title>
+</head>
+
+<body>
+  <div class="page-wrap">
+    <header class="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-6">
+            <a href="../../index.html"><span class="h1">JS Course</span></a>
+          </div>
+          <div class="col-6">
+            <ul class="link-wrap">
+              <li><a href="./task.html" target="_blank">Задачи</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="content-wrap">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="title-page">
+              <h2>Оператор нулевого слияния</h2>
+              <ul class="lessonpage">
+                <li><a href="https://learn.javascript.ru/nullish-coalescing-operator" target="_blank">Страница урока</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="workarea">
+              <h3>Оператор нулевого слияния (??)</h3>
+              <p>Эта возможность была добавлена в язык недавно. В старых браузерах может понадобиться полифил</p>
+              <p>Представляет собой два вопросительных знака ??</p>
+              <p>Обрабатывает null и undefined одинаковым образом</p>
+              <p>Значение «определено», если оно не равняется ни null, ни undefined</p>
+              <h4 class="mt-1">Результат выражения a ?? b</h4>
+              <p>- Если a определено, то a</p>
+              <p>- Если a не определено, то b</p>
+              <p>Оператор ?? возвращает первый аргумент, если он не null/undefined, иначе второй</p>
+              <h4 class="mt-1">Аналогии</h4>
+              <p>result = a ?? b</p>
+              <p>result = (a !== null && a !== undefined) ? a : b;</p>
+              <p>Далее см. код</p>
+            </div>
+            <div class="workarea">
+              <h3>1. Сравнение с ||</h3>
+              <p>Оператор ИЛИ || можно использовать для того же, что и ??</p>
+              <h4 class="mt-1">Принципиальное различие между ними:</h4>
+              <p>|| возвращает первое истинное значение</p>
+              <p>?? возвращает первое определённое значение</p>
+              <p>См. код</p>
+            </div>
+            <div class="workarea">
+              <h3>2. Приоритет</h3>
+              <p>Приоритет оператора ?? такой же, как и у ||. Они оба равны 3 в таблице на MDN</p>
+              <p>Таким образом, требуются скобки</p>
+              <p>См. код</p>
+            </div>
+            <div class="workarea">
+              <h3>3. Использование ?? вместе с && или ||</h3>
+              <p>По соображениям безопасности JavaScript запрещает использование оператора ?? вместе с && и ||, если приоритет явно не указан при помощи круглых скобок</p>
+              <h4 class="mt-1">let x = 1 && 2 ?? 3</h4>
+              <p>Код выше вызовет ошибку</p>
+              <p>Рекомендуется использовать скобки, чтобы обойти это ограничение</p>
+            </div>
+            <div class="workarea">
+              <h3>Итого</h3>
+              <p>Оператор нулевого слияния ?? — это быстрый способ выбрать первое «определённое» значение из списка.</p>
+              <p>Используется для присвоения переменным значений по умолчанию</p>
+              <p>Оператор ?? имеет низкий приоритет, поэтому при использовании его в выражении,
+              скорее всего, потребуются скобки</p>
+              <p>Запрещено использовать вместе с || или && без явно указанного приоритета, то есть без скобок</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="col-12">
+          <a href="https://learn.javascript.ru/" class="h3" target="_blank">JS Course Learn</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
