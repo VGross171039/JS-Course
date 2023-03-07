@@ -43,3 +43,15 @@ function doNothing() {
   return;
 }
 console.log( doNothing() === undefined ); // true
+
+//  Перенос return
+
+// return
+//  (some + long + expression + or + whatever * f(a) + f(b));
+//  Uncaught SyntaxError: Illegal return statement
+
+//  Интерпретация
+//  return;
+//    (some + long + expression + or + whatever * f(a) + f(b))
+
+//  Если мы хотим, чтобы возвращаемое выражение занимало несколько строк, нужно начать его на той же строке, что и return. Достаточно поставить открывающую скобку
